@@ -3,9 +3,6 @@ require 'byebug'
 
 module Searchable
   
-  attr_reader :nodes
-  
-  
   def dfs(value)
     return self if self.value == value
     self.children.each do |child|
@@ -35,10 +32,10 @@ class PolyTreeNode
   attr_reader :value
   attr_accessor :children, :node_parent
   
-  def initialize(value, node_parent = nil, children = [])
+  def initialize(value)
     @value = value
-    @node_parent = node_parent 
-    @children = children 
+    @node_parent = nil 
+    @children = []
   end
   
   def parent=(node)
