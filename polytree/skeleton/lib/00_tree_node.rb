@@ -1,7 +1,30 @@
 require 'pry'
 require 'byebug'
 
+module Searchable
+  
+  attr_reader :nodes
+  
+  
+  def dfs(value)
+    return self if self.value == value
+    self.children.each do |child|
+      search_result = child.dfs(value)
+      return search_result unless search_result.nil?
+    end
+    nil
+  end
+  
+  def bfs(value)
+    
+  end
+  
+end
+
+
 class PolyTreeNode
+  
+  include Searchable
   
   attr_reader :value
   attr_accessor :children, :node_parent
@@ -38,8 +61,4 @@ class PolyTreeNode
 
 end
 
-class Searchable
-  
-  def defsen
-end
 
