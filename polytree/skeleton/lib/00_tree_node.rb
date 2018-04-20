@@ -16,7 +16,13 @@ module Searchable
   end
   
   def bfs(value)
-    
+    queue = [self]
+    until queue.empty?
+      checked_el = queue.shift
+      return checked_el if checked_el.value == value
+      queue.concat(checked_el.children)
+    end
+    nil
   end
   
 end
