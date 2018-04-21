@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-eYhUAIv4O/68uoHkCtYXVTxc5Q92+NKMtOryYR5Svt7vDp34XkrggN5j4lrKyiB0B2HUyrAYvAb3tlhmFGhivg==" rel="stylesheet" href="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/frameworks-592c4aa40e940d1b0607a3cf272916ff.css">
+  <link crossorigin="anonymous" media="all" integrity="sha512-tAb2Jg5owcau6P+YFTlebsFvybAeFaii7FoIIuYEtgu+esY8+SX6Xhyw3fXb+f9QB6wwivUzgoXXwO8ZteApKA==" rel="stylesheet" href="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/github-fdbbae74da4136fd4258a92eb943be60.css">
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>curriculum/ruby/projects/knights_travails at master · appacademy/curriculum</title>
+    <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/2138704?s=400&amp;v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="appacademy/curriculum"><meta property="og:url" content="https://github.com/appacademy/curriculum"><meta property="og:description" content="curriculum - The pride of App Academy!">
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjY4NTE1MjgxOjk2ZDZlMGEyZmIyOWM5ZmMxOTZiYzcyZGVmZDcxZDhhMTkzZThkMjMzZWM3YmU2NTU1YTk1ZGExZTk5YjY0ZTk=--af8b0cba95b1845759472fc62dfd38aa1c756bb8">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+  <meta name="request-id" content="D09D:3017:13720FC:1DFF3D9:5ADA56A0" data-pjax-transient="">
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-request_id" content="D09D:3017:13720FC:1DFF3D9:5ADA56A0"><meta name="octolytics-dimension-region_edge" content="sea"><meta name="octolytics-dimension-region_render" content="iad"><meta name="octolytics-actor-id" content="35831643"><meta name="octolytics-actor-login" content="dchen323"><meta name="octolytics-actor-hash" content="8731008c89dff585e8845e42e1a7dc50f3cc531a716633b848ccd182ab39886e">
+<meta name="analytics-location-query-strip" content="true" data-pjax-transient="true"><meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true">
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="dchen323">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NGIwMjZkYTE0NTI2MzE3ZDRmYWJhNTVhYjhhOWQxNjg5MjE2ODczNTM1YjVhYzA4ZWMwMmJjMGNhNDY1YmMwZHx7InJlbW90ZV9hZGRyZXNzIjoiMTIuMjMuNTYuOTgiLCJyZXF1ZXN0X2lkIjoiRDA5RDozMDE3OjEzNzIwRkM6MURGRjNEOTo1QURBNTZBMCIsInRpbWVzdGFtcCI6MTUyNDI1ODQ2NCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="f49684fa5a03d7f37a4891ff38773983a51005af">
+
+  <meta http-equiv="x-pjax-version" content="10c80ea533591cecc9bf0d03e9bbdc45">
+  
+
+      <link href="https://github.com/appacademy/curriculum/commits/master.atom?token=AiK_W9EFyMOsKB9OmIpHVd20G_0kWAtsks6455cwwA%3D%3D" rel="alternate" title="Recent Commits to curriculum:master" type="application/atom+xml">
+
+  <meta name="description" content="curriculum - The pride of App Academy!">
+  <meta name="go-import" content="github.com/appacademy/curriculum git https://github.com/appacademy/curriculum.git">
+
+  <meta name="octolytics-dimension-user_id" content="2138704"><meta name="octolytics-dimension-user_login" content="appacademy"><meta name="octolytics-dimension-repository_id" content="58491312"><meta name="octolytics-dimension-repository_nwo" content="appacademy/curriculum"><meta name="octolytics-dimension-repository_public" content="false"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="58491312"><meta name="octolytics-dimension-repository_network_root_nwo" content="appacademy/curriculum"><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false">
+
+
+    <link rel="canonical" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+<link rel="manifest" href="https://github.com/manifest.json" crossorigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production emoji-size-boost">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" data-scoped-search-url="/appacademy/curriculum/search" data-unscoped-search-url="/search" action="https://github.com/appacademy/curriculum/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+    <label class="form-control header-search-wrapper  js-chromeless-input-container">
+          <a class="header-search-scope no-underline" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails">This repository</a>
+      <input type="text" class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search" aria-label="Search this repository" data-unscoped-placeholder="Search GitHub" data-scoped-placeholder="Search" autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type">
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="https://github.com/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="https://github.com/issues">
+                Issues
+</a>            </li>
+                <li>
+                  <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-selected-links=" /marketplace" href="https://github.com/marketplace">
+                    Marketplace
+</a>                </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="https://github.com/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:35831643" href="https://github.com/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"></path></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink" aria-label="Create new…" data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"></path></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="https://github.com/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="appacademy/curriculum">This repository</span>
+  </div>
+    <a class="dropdown-item" href="https://github.com/appacademy/curriculum/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@dchen323" class="avatar float-left mr-1" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/35831643" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">dchen323</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://github.com/dchen323" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="https://github.com/dchen323?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --><form class="logout-form" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="jRi6Ehh2inq6Na+dMVMfmYfh8rWEPqAbDcsFL68JXKRCv8ECf5NYrNCd3iK19GEgKKVU3hv6ZhiJyzmGoB0phg==">
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --><form class="sr-only right-0" action="https://github.com/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="0oAtzZEfzB83qMtOZLIO5PrQ0Bh+74lMJMZ/KmqbRFodJ1bd9voeyV0AuvHgFXBdVZR2c+ErT0+gxkODZY8xeA==">
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container="">
+      
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --><form data-autosubmit="true" data-remote="true" class="js-social-container" action="https://github.com/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ZZGYYRXfY6iH4oMU0J6b0jwWmmjJDwaIKbtu+tZwe6jyve/g8qR3/jmkgYEMDQB644i1EzvI5au3S8mn7AHLOQ==">      <input type="hidden" name="repository_id" id="repository_id" value="58491312" class="form-control">
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="https://github.com/appacademy/curriculum/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Toggle repository notifications menu" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="https://github.com/appacademy/curriculum/watchers" aria-label="44 users are watching this repository">
+            44
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked">
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed">
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore">
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="starred js-social-form" action="https://github.com/appacademy/curriculum/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="uDdEv22WdH/c2GbeYMmg1BrZe5xESs1O3suye6qJD1R6u6dq2DqJDligy0LDrgOr2Xast+WsZlXwI2EKpMrI0A==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar appacademy/curriculum" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/appacademy/curriculum/stargazers" aria-label="267 users starred this repository">
+          267
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="unstarred js-social-form" action="https://github.com/appacademy/curriculum/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="tBS0FiaPjDC4wWi0ggJtAwbu3zkriJspM9m+K5s5o3U27wS60fYNV29ZJ2yBogzc+GU0J0+PYCga3mB2xefAWg==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star appacademy/curriculum" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/appacademy/curriculum/stargazers" aria-label="267 users starred this repository">
+          267
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#fork-destination-box" class="btn btn-sm btn-with-count" title="Fork your own copy of appacademy/curriculum to your account" aria-label="Fork your own copy of appacademy/curriculum to your account" rel="facebox" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork">
+              <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src="" class="js-fork-select-fragment fork-select-fragment" data-url="/appacademy/curriculum/fork?fragment=1">
+              <img alt="Loading" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/octocat-spinner-128.gif" width="64" height="64">
+            </include-fragment>
+          </div>
+
+    <a href="https://github.com/appacademy/curriculum/network" class="social-count" aria-label="859 users forked this repository">
+      859
+    </a>
+  </li>
+</ul>
+
+      <h1 class="private ">
+  <svg class="octicon octicon-lock" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 13H3v-1h1v1zm8-6v7c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h1V4c0-2.2 1.8-4 4-4s4 1.8 4 4v2h1c.55 0 1 .45 1 1zM3.8 6h4.41V4c0-1.22-.98-2.2-2.2-2.2-1.22 0-2.2.98-2.2 2.2v2H3.8zM11 7H2v7h9V7zM4 8H3v1h1V8zm0 2H3v1h1v-1z"></path></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="https://github.com/appacademy">appacademy</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="https://github.com/appacademy/curriculum">curriculum</a></strong>
+    <span class="Label Label--outline v-align-middle">Private</span>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /appacademy/curriculum" href="https://github.com/appacademy/curriculum">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /appacademy/curriculum/issues" href="https://github.com/appacademy/curriculum/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">7</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /appacademy/curriculum/pulls" href="https://github.com/appacademy/curriculum/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">7</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /appacademy/curriculum/projects" href="https://github.com/appacademy/curriculum/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /appacademy/curriculum/wiki" href="https://github.com/appacademy/curriculum/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /appacademy/curriculum/pulse" href="https://github.com/appacademy/curriculum/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/CUR-55/ruby/projects/knights_travails" data-name="CUR-55" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                CUR-55
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/CUR-290-pg-version/ruby/projects/knights_travails" data-name="CUR-290-pg-version" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                CUR-290-pg-version
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/arrow_funct_currying/ruby/projects/knights_travails" data-name="arrow_funct_currying" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                arrow_funct_currying
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/bench-bnb-session/ruby/projects/knights_travails" data-name="bench-bnb-session" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                bench-bnb-session
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/bench_bnb_env/ruby/projects/knights_travails" data-name="bench_bnb_env" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                bench_bnb_env
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/capybara-bonus/ruby/projects/knights_travails" data-name="capybara-bonus" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                capybara-bonus
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/change-study-hall/ruby/projects/knights_travails" data-name="change-study-hall" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                change-study-hall
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/create-roadmap/ruby/projects/knights_travails" data-name="create-roadmap" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                create-roadmap
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/cur-244-fat-arrow/ruby/projects/knights_travails" data-name="cur-244-fat-arrow" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                cur-244-fat-arrow
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/dobrynin-patch-1/ruby/projects/knights_travails" data-name="dobrynin-patch-1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                dobrynin-patch-1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/file_upload_README/BCScott/ruby/projects/knights_travails" data-name="file_upload_README/BCScott" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                file_upload_README/BCScott
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/fix-n-plus-1-ex/ruby/projects/knights_travails" data-name="fix-n-plus-1-ex" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                fix-n-plus-1-ex
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/fix-rspec-order-reading/ruby/projects/knights_travails" data-name="fix-rspec-order-reading" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                fix-rspec-order-reading
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/front_end_auth_videos_experiment/ruby/projects/knights_travails" data-name="front_end_auth_videos_experiment" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                front_end_auth_videos_experiment
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/gh-pages/ruby/projects/knights_travails" data-name="gh-pages" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/goal-app-syntax/ruby/projects/knights_travails" data-name="goal-app-syntax" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                goal-app-syntax
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/jcadenas-update-behance-mvps/ruby/projects/knights_travails" data-name="jcadenas-update-behance-mvps" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                jcadenas-update-behance-mvps
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/lets-be-real-developers/ruby/projects/knights_travails" data-name="lets-be-real-developers" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                lets-be-real-developers
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/modal-demo/ruby/projects/knights_travails" data-name="modal-demo" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                modal-demo
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/moeroach94-patch-1/ruby/projects/knights_travails" data-name="moeroach94-patch-1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                moeroach94-patch-1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/pokedex-maintainence/ruby/projects/knights_travails" data-name="pokedex-maintainence" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                pokedex-maintainence
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/react-lite/ruby/projects/knights_travails" data-name="react-lite" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                react-lite
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/sf-logistical-updates/ruby/projects/knights_travails" data-name="sf-logistical-updates" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                sf-logistical-updates
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/singular-resources/ruby/projects/knights_travails" data-name="singular-resources" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                singular-resources
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/staging/ruby/projects/knights_travails" data-name="staging" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                staging
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/unbind-widgets/ruby/projects/knights_travails" data-name="unbind-widgets" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                unbind-widgets
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/w7d3-sf-demo/ruby/projects/knights_travails" data-name="w7d3-sf-demo" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                w7d3-sf-demo
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v.12.1/ruby/projects/knights_travails" data-name="v.12.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v.12.1">
+                v.12.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.12/ruby/projects/knights_travails" data-name="v6.8.12" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.12">
+                v6.8.12
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.10/ruby/projects/knights_travails" data-name="v6.8.10" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.10">
+                v6.8.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.9/ruby/projects/knights_travails" data-name="v6.8.9" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.9">
+                v6.8.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.8/ruby/projects/knights_travails" data-name="v6.8.8" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.8">
+                v6.8.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.7/ruby/projects/knights_travails" data-name="v6.8.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.7">
+                v6.8.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.6/ruby/projects/knights_travails" data-name="v6.8.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.6">
+                v6.8.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.5/ruby/projects/knights_travails" data-name="v6.8.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.5">
+                v6.8.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.4/ruby/projects/knights_travails" data-name="v6.8.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.4">
+                v6.8.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.2/ruby/projects/knights_travails" data-name="v6.8.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.2">
+                v6.8.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.1/ruby/projects/knights_travails" data-name="v6.8.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.1">
+                v6.8.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.8.0/ruby/projects/knights_travails" data-name="v6.8.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.8.0">
+                v6.8.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.6.0/ruby/projects/knights_travails" data-name="v6.6.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.6.0">
+                v6.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.6/ruby/projects/knights_travails" data-name="v6.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.6">
+                v6.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.5.1/ruby/projects/knights_travails" data-name="v6.5.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.5.1">
+                v6.5.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.5.0/ruby/projects/knights_travails" data-name="v6.5.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.5.0">
+                v6.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.2.1/ruby/projects/knights_travails" data-name="v6.2.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.2.1">
+                v6.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v6.0.0/ruby/projects/knights_travails" data-name="v6.0.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v6.0.0">
+                v6.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.9/ruby/projects/knights_travails" data-name="v5.3.9" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.9">
+                v5.3.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.8/ruby/projects/knights_travails" data-name="v5.3.8" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.8">
+                v5.3.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.7/ruby/projects/knights_travails" data-name="v5.3.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.7">
+                v5.3.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.6/ruby/projects/knights_travails" data-name="v5.3.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.6">
+                v5.3.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.5/ruby/projects/knights_travails" data-name="v5.3.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.5">
+                v5.3.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.4/ruby/projects/knights_travails" data-name="v5.3.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.4">
+                v5.3.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.2/ruby/projects/knights_travails" data-name="v5.3.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.2">
+                v5.3.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.1/ruby/projects/knights_travails" data-name="v5.3.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.1">
+                v5.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.3.0/ruby/projects/knights_travails" data-name="v5.3.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.3.0">
+                v5.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.2.4/ruby/projects/knights_travails" data-name="v5.2.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.2.4">
+                v5.2.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.2.3/ruby/projects/knights_travails" data-name="v5.2.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.2.3">
+                v5.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.2.2/ruby/projects/knights_travails" data-name="v5.2.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.2.2">
+                v5.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.2.1/ruby/projects/knights_travails" data-name="v5.2.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.2.1">
+                v5.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.2.0/ruby/projects/knights_travails" data-name="v5.2.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.2.0">
+                v5.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.1.1/ruby/projects/knights_travails" data-name="v5.1.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.1.1">
+                v5.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.1.0/ruby/projects/knights_travails" data-name="v5.1.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.1.0">
+                v5.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.0.1/ruby/projects/knights_travails" data-name="v5.0.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.0.1">
+                v5.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v5.0.0/ruby/projects/knights_travails" data-name="v5.0.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v5.0.0">
+                v5.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.25.0/ruby/projects/knights_travails" data-name="v4.25.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.25.0">
+                v4.25.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.24.0/ruby/projects/knights_travails" data-name="v4.24.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.24.0">
+                v4.24.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.23.0/ruby/projects/knights_travails" data-name="v4.23.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.23.0">
+                v4.23.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.22.1/ruby/projects/knights_travails" data-name="v4.22.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.22.1">
+                v4.22.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.22.0/ruby/projects/knights_travails" data-name="v4.22.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.22.0">
+                v4.22.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.21.0/ruby/projects/knights_travails" data-name="v4.21.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.21.0">
+                v4.21.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.20.1/ruby/projects/knights_travails" data-name="v4.20.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.20.1">
+                v4.20.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.20.0/ruby/projects/knights_travails" data-name="v4.20.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.20.0">
+                v4.20.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.19.0/ruby/projects/knights_travails" data-name="v4.19.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.19.0">
+                v4.19.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.18.0/ruby/projects/knights_travails" data-name="v4.18.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.18.0">
+                v4.18.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.7/ruby/projects/knights_travails" data-name="v4.16.7" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.7">
+                v4.16.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.6/ruby/projects/knights_travails" data-name="v4.16.6" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.6">
+                v4.16.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.5/ruby/projects/knights_travails" data-name="v4.16.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.5">
+                v4.16.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.4/ruby/projects/knights_travails" data-name="v4.16.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.4">
+                v4.16.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.3/ruby/projects/knights_travails" data-name="v4.16.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.3">
+                v4.16.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.2/ruby/projects/knights_travails" data-name="v4.16.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.2">
+                v4.16.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.16.1/ruby/projects/knights_travails" data-name="v4.16.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.16.1">
+                v4.16.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.15.1/ruby/projects/knights_travails" data-name="v4.15.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.15.1">
+                v4.15.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.15.0/ruby/projects/knights_travails" data-name="v4.15.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.15.0">
+                v4.15.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.14.3/ruby/projects/knights_travails" data-name="v4.14.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.14.3">
+                v4.14.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.14.2/ruby/projects/knights_travails" data-name="v4.14.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.14.2">
+                v4.14.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.14.1/ruby/projects/knights_travails" data-name="v4.14.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.14.1">
+                v4.14.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.14.0/ruby/projects/knights_travails" data-name="v4.14.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.14.0">
+                v4.14.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.13.1/ruby/projects/knights_travails" data-name="v4.13.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.13.1">
+                v4.13.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.13.0/ruby/projects/knights_travails" data-name="v4.13.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.13.0">
+                v4.13.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.12.1/ruby/projects/knights_travails" data-name="v4.12.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.12.1">
+                v4.12.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.12.0/ruby/projects/knights_travails" data-name="v4.12.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.12.0">
+                v4.12.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.11.1/ruby/projects/knights_travails" data-name="v4.11.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.11.1">
+                v4.11.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.11.0/ruby/projects/knights_travails" data-name="v4.11.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.11.0">
+                v4.11.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.10.1/ruby/projects/knights_travails" data-name="v4.10.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.10.1">
+                v4.10.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.10.0/ruby/projects/knights_travails" data-name="v4.10.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.10.0">
+                v4.10.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.9.0/ruby/projects/knights_travails" data-name="v4.9.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.9.0">
+                v4.9.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.8.0/ruby/projects/knights_travails" data-name="v4.8.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.8.0">
+                v4.8.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.7.2/ruby/projects/knights_travails" data-name="v4.7.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.7.2">
+                v4.7.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.7.1/ruby/projects/knights_travails" data-name="v4.7.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.7.1">
+                v4.7.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.7.0/ruby/projects/knights_travails" data-name="v4.7.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.7.0">
+                v4.7.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.6.4/ruby/projects/knights_travails" data-name="v4.6.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.6.4">
+                v4.6.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.6.3/ruby/projects/knights_travails" data-name="v4.6.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.6.3">
+                v4.6.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.6.2/ruby/projects/knights_travails" data-name="v4.6.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.6.2">
+                v4.6.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.6.1/ruby/projects/knights_travails" data-name="v4.6.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.6.1">
+                v4.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.6.0/ruby/projects/knights_travails" data-name="v4.6.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.6.0">
+                v4.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.5.0/ruby/projects/knights_travails" data-name="v4.5.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.5.0">
+                v4.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.4.2/ruby/projects/knights_travails" data-name="v4.4.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.2">
+                v4.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.4.1/ruby/projects/knights_travails" data-name="v4.4.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.1">
+                v4.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.4.0/ruby/projects/knights_travails" data-name="v4.4.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.0">
+                v4.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.3.0/ruby/projects/knights_travails" data-name="v4.3.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.3.0">
+                v4.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.2.0/ruby/projects/knights_travails" data-name="v4.2.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.0">
+                v4.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.1.3/ruby/projects/knights_travails" data-name="v4.1.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.3">
+                v4.1.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.1.1/ruby/projects/knights_travails" data-name="v4.1.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.1">
+                v4.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.1.0/ruby/projects/knights_travails" data-name="v4.1.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.0">
+                v4.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.0.3/ruby/projects/knights_travails" data-name="v4.0.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.3">
+                v4.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.0.2/ruby/projects/knights_travails" data-name="v4.0.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.2">
+                v4.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.0.1/ruby/projects/knights_travails" data-name="v4.0.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.1">
+                v4.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v4.0.0/ruby/projects/knights_travails" data-name="v4.0.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.0">
+                v4.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.6.1/ruby/projects/knights_travails" data-name="v3.6.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.6.1">
+                v3.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.6.0/ruby/projects/knights_travails" data-name="v3.6.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.6.0">
+                v3.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.5.0/ruby/projects/knights_travails" data-name="v3.5.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.5.0">
+                v3.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.4.0/ruby/projects/knights_travails" data-name="v3.4.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.4.0">
+                v3.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.3.0/ruby/projects/knights_travails" data-name="v3.3.0" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.3.0">
+                v3.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.2.5/ruby/projects/knights_travails" data-name="v3.2.5" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.5">
+                v3.2.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.2.4/ruby/projects/knights_travails" data-name="v3.2.4" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.4">
+                v3.2.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.2.3/ruby/projects/knights_travails" data-name="v3.2.3" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.3">
+                v3.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.2.2/ruby/projects/knights_travails" data-name="v3.2.2" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.2">
+                v3.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/appacademy/curriculum/tree/v3.2.1/ruby/projects/knights_travails" data-name="v3.2.1" data-skip-pjax="true" rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.1">
+                v3.2.1
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      
+  <!-- '"` --><!-- </textarea></xmp> --><form class="BtnGroup-form" action="https://github.com/appacademy/curriculum/new/master/ruby/projects/knights_travails" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="B+d3/5nD5JHb432Ik4SRQNB0HkTlU6Hybt+AsXvHLfUGkpBZSr3XW7oD+kDiFtKR6nnJzl+RnUEg2fuZKpI3Cw==">
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+        <a href="https://github.com/appacademy/curriculum/upload/master/ruby/projects/knights_travails" class="btn btn-sm BtnGroup-item">
+          Upload files
+        </a>
+
+      <a href="https://github.com/appacademy/curriculum/find/master" data-pjax="" data-hotkey="t" class="js-pjax-capture-input btn btn-sm BtnGroup-item empty-icon">
+        Find file
+      </a>
+      <a href="https://github.com/appacademy/curriculum/commits/master/ruby/projects/knights_travails" class="btn btn-sm BtnGroup-item empty-icon tooltipped tooltipped-nw" aria-label="Browse commits for this branch">
+        History
+      </a>
+    </div>
+    <div class="breadcrumb"><span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="https://github.com/appacademy/curriculum"><span>curriculum</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="https://github.com/appacademy/curriculum/tree/master/ruby"><span>ruby</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects"><span>projects</span></a></span><span class="separator">/</span><strong class="final-path">knights_travails</strong><span class="separator">/</span></div>
+  </div>
+
+  
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/appacademy/curriculum/commit/c4f7659f2b9bcb2ef6087a964d3a590647b5a12d" data-pjax="">
+        c4f7659
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2017-11-10T15:59:59Z" title="Nov 10, 2017, 7:59 AM PST">on Nov 10, 2017</relative-time></span>
+    </span>
+
+
+    <div class="d-flex no-wrap">
+      
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="m1010j">
+
+        <a class="avatar" data-skip-pjax="true" data-hovercard-user-id="28028994" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/m1010j" aria-describedby="hovercard-aria-description">
+          <img height="20" width="20" alt="@m1010j" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/28028994">
+</a>  </div>
+</div>
+
+      <div class="flex-auto f6">
+        
+      <a href="https://github.com/appacademy/curriculum/commits?author=m1010j" class="commit-author tooltipped tooltipped-s user-mention" aria-label="View all commits by m1010j">m1010j</a>
+
+
+  
+
+
+          <a data-pjax="true" title="Change &#39;a path&#39; to &#39;the shortest path&#39;" class="message" href="https://github.com/appacademy/curriculum/commit/c4f7659f2b9bcb2ef6087a964d3a590647b5a12d">Change 'a path' to 'the shortest path'</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="https://github.com/appacademy/curriculum/tree/536072d2015eeea317de2e4284b84de3bb5b36a7/ruby/projects/knights_travails">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+      <tbody><tr class="up-tree js-navigation-item">
+        <td></td>
+        <td><a rel="nofollow" title="Go to parent directory" class="js-navigation-open" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    </tbody><tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="solution" id="550237b8fbcdf3741bb1127d0fc7f6bf-293c87e4486c5a755233eea034d29b12dd60617b" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails/solution">solution</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Update 01_knights_travail.rb" class="message" href="https://github.com/appacademy/curriculum/commit/19beb799f659090ed5451aa12bdba6f737496a7c">Update 01_knights_travail.rb</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-10-06T21:52:25Z" title="Oct 6, 2017, 2:52 PM PDT">7 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-6f3434fdd68e119ddeeb259d4e5df453600655d7" href="https://github.com/appacademy/curriculum/blob/master/ruby/projects/knights_travails/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Change &#39;a path&#39; to &#39;the shortest path&#39;" class="message" href="https://github.com/appacademy/curriculum/commit/c4f7659f2b9bcb2ef6087a964d3a590647b5a12d">Change 'a path' to 'the shortest path'</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-10T15:59:59Z" title="Nov 10, 2017, 7:59 AM PST">5 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/octocat-spinner-32.gif">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="solution.zip" id="433409076e705ac4842ada21f5913982-5a2acad49c4cf9239d119a95ff2044a8dbbaf66f" href="https://github.com/appacademy/curriculum/blob/master/ruby/projects/knights_travails/solution.zip">solution.zip</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="zip knights, poly tree, and ttt-ai" class="message" href="https://github.com/appacademy/curriculum/commit/6cfde6af045ae9a8699c7ebb77bb9f3cbe45bb4b">zip knights, poly tree, and ttt-ai</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-10-18T00:28:25Z" title="Oct 17, 2017, 5:28 PM PDT">6 months ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-knights-travails" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#knights-travails"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Knight's Travails</h1>
+<p><strong>Read through all the instructions before beginning!</strong></p>
+<h2><a id="user-content-learning-goals" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#learning-goals"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Learning Goals</h2>
+<ul>
+<li>Be able to implement your PolyTreeNode to build a path from start to finish</li>
+<li>Know how to store and traverse a tree</li>
+<li>Know when and why to use BFS vs. DFS</li>
+</ul>
+<h2><a id="user-content-phase-0-description" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#phase-0-description"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase 0: Description</h2>
+<p>In this project we will create a class that will find the shortest path for a Chess Knight from a starting position to an end position. Both the start and end positions should be on a standard 8x8 chess board.</p>
+<p><strong>NB</strong>: this problem is a lot like word chains!</p>
+<p>Write a class, <code>KnightPathFinder</code>. Initialize your <code>KnightPathFinder</code> with a starting position. For instance:</p>
+<div class="highlight highlight-source-ruby"><pre>kpf <span class="pl-k">=</span> <span class="pl-c1">KnightPathFinder</span>.<span class="pl-k">new</span>([<span class="pl-c1">0</span>, <span class="pl-c1">0</span>])</pre></div>
+<p>Ultimately, I want to be able to find paths to end positions:</p>
+<div class="highlight highlight-source-ruby"><pre>kpf.find_path([<span class="pl-c1">2</span>, <span class="pl-c1">1</span>]) <span class="pl-c"><span class="pl-c">#</span> =&gt; [[0, 0], [2, 1]]</span>
+kpf.find_path([<span class="pl-c1">3</span>, <span class="pl-c1">3</span>]) <span class="pl-c"><span class="pl-c">#</span> =&gt; [[0, 0], [2, 1], [3, 3]]</span></pre></div>
+<p>To help us find paths, we will build a <strong>move tree</strong>. The values in the tree will be positions. A node is a child of another node if you can move from the parent position directly to the child position. The root of the tree should be the knight's starting position. <strong>You will want to build on your <code>PolyTreeNode</code> work, using <code>PolyTreeNode</code> instances to represent each position.</strong></p>
+<p>You will be writing an instance method <code>KnightPathFinder#build_move_tree</code> to build the move tree and store it as an instance variable. Call this method in <code>initialize</code>; you will traverse the move tree whenever <code>#find_path</code> is called. <strong>Don't write this yet though</strong>.</p>
+<h2><a id="user-content-phase-i-new_move_positions" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#phase-i-new_move_positions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase I: <code>#new_move_positions</code></h2>
+<p>Before we start <code>#build_move_tree</code>, you'll want to be able to find new positions you can move to from a given position. Write a <strong>class</strong> method <code>KnightPathFinder::valid_moves(pos)</code>. There are up to eight possible moves.</p>
+<p>You'll also want to avoid repeating positions in the move tree. For instance, we don't want to infinitely explore moving betweeen the same two positions. Add an instance variable, <code>@visited_positions</code> to keep track of the positions you have visited; initialize it to the array containing just the starting pos. Write an <strong>instance</strong> method <code>#new_move_positions(pos)</code>; this should call the <code>::valid_moves</code> class method, but filter out any positions that are already in <code>@visited_positions</code>. It should then add the remaining new positions to <code>@visited_positions</code> and <strong>return</strong> these new positions.</p>
+<h2><a id="user-content-phase-ii-build_move_tree" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#phase-ii-build_move_tree"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase II: <code>#build_move_tree</code></h2>
+<p>Let's return to <code>#build_move_tree</code>. We'll use our <code>#new_move_positions</code> instance method.</p>
+<p>To ensure that your tree represents only the shortest path to a given position, build your tree in a <strong>breadth-first</strong> manner. Take inspiration from your BFS algorithm: use a queue to process nodes in FIFO order. Start with a root node representing the <code>start_pos</code> and explore moves from one position at a time.</p>
+<p>Next build nodes representing positions one move away, add these to the queue. Then take the next node from the queue... until the queue is empty.</p>
+<p>When you have completed, and tested, <code>#build_move_tree</code> <strong>get a code review from your TA</strong>.</p>
+<h2><a id="user-content-phase-iii-find_path" class="anchor" aria-hidden="true" href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails#phase-iii-find_path"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phase III: <code>#find_path</code></h2>
+<p>Now that we have created our internal data structure (<code>@move_tree</code>), we can traverse it to find the shortest path to any position on the board from our original <code>@start_pos</code>.</p>
+<p>Create an instance method <code>#find_path(end_pos)</code> to search for <code>end_pos</code> in the move tree. You can use either <code>dfs</code> or <code>bfs</code> search methods from the PolyTreeNode exercises; it doesn't matter. This should return the tree node instance containing <code>end_pos</code>.</p>
+<p>This gives us a node, but not a path. Lastly, add a method <code>#trace_path_back</code> to <code>KnightPathFinder</code>. This should trace back from the node to the root using <code>PolyTreeNode#parent</code>. As it goes up-and-up toward the root, it should add each value to an array. <code>#trace_path_back</code> should <strong>return</strong> the values in order from the start position to the end position.</p>
+<p>Use <code>#trace_path_back</code> to finish up <code>#find_path</code>.</p>
+<p>Here are some example paths that you can use for testing purposes (yours might not be exactly the same, but should be the same number of steps);</p>
+<div class="highlight highlight-source-ruby"><pre>kpf <span class="pl-k">=</span> <span class="pl-c1">KnightPathFinder</span>.<span class="pl-k">new</span>([<span class="pl-c1">0</span>, <span class="pl-c1">0</span>])
+kpf.find_path([<span class="pl-c1">7</span>, <span class="pl-c1">6</span>]) <span class="pl-c"><span class="pl-c">#</span> =&gt; [[0, 0], [1, 2], [2, 4], [3, 6], [5, 5], [7, 6]]</span>
+kpf.find_path([<span class="pl-c1">6</span>, <span class="pl-c1">2</span>]) <span class="pl-c"><span class="pl-c">#</span> =&gt; [[0, 0], [1, 2], [2, 0], [4, 1], [6, 2]]</span></pre></div>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2018 <span title="0.23345s from unicorn-77534699-51z03">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://blog.github.com/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-yNr0q+cdUZ7oyTrEbVbhiYGFYmrAMbaxySSMyAyKD/aeBDYeT5Ljsi7D5VN2pTojNgRVWAwNwv1ub03StbDwhg==" type="application/javascript" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/frameworks-cae483278a9c7126c25f62f25f2cfb95.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YBL5z5N/FrULI3iliWfs8FIdEHe1xg5r7gPOmks4aFWbPKNRCIo9eVysQriaVQj1SrYp7ry4xDADok2cWkiemA==" type="application/javascript" src="./curriculum_ruby_projects_knights_travails at master · appacademy_curriculum_files/github-dea53a441a0d30d1d86626e99f9f7872.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="https://github.com/appacademy/curriculum/tree/master/ruby/projects/knights_travails">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  
+
+
+</body></html>
